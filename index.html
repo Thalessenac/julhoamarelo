@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Julho Amarelo</title> 
+<style>
+        body {
+            background: linear-gradient(to left, #FFFF00, #FFD700  );
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: auto; /* Adiciona uma barra de rolagem se necessário */
+        }
+        .imagem-produto {
+            position: relative;
+            width: 100%; /* Ajuste a largura conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .imagem-sintoma {
+            position: center;
+            width: 70%; /* Ajuste a largura conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .titulo1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+        }
+ 
+        .titulo2 {
+            font-family: arial; /* Isso muda a fonte da letra */
+            text-align: center;
+            font-size: 25px;
+            color: black;
+        }
+        .botao1 {
+            border-radius: 20px;
+            background-color: #CDAD00;
+            color: black;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transform: scale(1.5);
+            box-shadow: 0px 7px 7px 7px rgba(0, 0, 0, 0.1);
+            width: 30%;
+
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+       <img src="C:/Users/thales.7805/Documents/julho-amarelo/logo.png" alt="Imagem do Produto" class="imagem-produto">
+
+    <div class="titulo1"> <br>Hepatite: o que é, sintomas, tipos, causas e tratamento<P></P> </div>
+
+    <div class="titulo2"> A hepatite é a inflamação do fígado que, na maioria dos casos, é causada por vírus, porém também pode acontecer como consequência do uso indiscriminado de medicamentos, do consumo excessivo de bebidas alcoólicas ou devido a uma alteração autoimune.<P></P>
+    </div>
+
+
+        <div style="display: flex; justify-content: center;">
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/dcxlk6TCJbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    
+       <p></p>
+
+       <div style="display: flex; justify-content: center;">
+       <img src="C:/Users/thales.7805/Documents/julho-amarelo/sintomas.png" alt="Imagem do sintomas" class="imagem-sintoma">
+       </div>    
+
+
+        <div class="titulo1"> <br>Tipos de Hepatites<P></P> </div>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton" class="botao1">
+    Hepatite A
+    </button>
+</div>
+
+
+<p id="myText" class="titulo2" style="display: none;">
+A hepatite A é causada pelo vírus da hepatite A (HAV), que causa inflamação do fígado e pode provocar alguns sintomas como cansaço, febre baixa, olhos e pele amarelados, enjoo, dor de cabeça e na barriga, por exemplo.<br>
+<br>A infecção pelo vírus da hepatite A acontece principalmente através do consumo de água e alimentos contaminados. Além disso, a hepatite A também pode ser transmitida por contato sexual sem proteção, com uma pessoa infectada.
+</p>
+
+<script>
+document.getElementById("myButton").addEventListener("mouseover", function() {
+    document.getElementById("myButton").style.backgroundColor = "#CDAD00";
+    document.getElementById("myText").style.display = "block";
+});
+
+document.getElementById("myButton").addEventListener("mouseout", function() {
+    document.getElementById("myButton").style.backgroundColor = "#FFD700";
+    document.getElementById("myText").style.display = "none";
+});
+
+document.getElementById("myButton").addEventListener("click", function() {
+    document.getElementById("myText").style.display = "block";
+});
+</script>
+
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton2" class="botao1">
+    Hepatite B
+    </button>
+</div>
+
+<p id="myText2" class="titulo2" style="display: none;">
+A hepatite B é uma doença causada pelo vírus HBV, que é transmitido quando o sangue, o sêmen ou outros fluidos corporais de uma pessoa infectada entram no corpo de uma pessoa saudável. <br><br> Assim, a hepatite B pode ser transmitida através do contato sexual desprotegido, compartilhamento de agulhas ou seringas, ou de uma mãe infectada para o bebê durante a gravidez ou parto, por exemplo. Os sintomas da hepatite B são semelhantes ao da hepatite A.
+
+</p>
+
+<script>
+document.getElementById("myButton2").addEventListener("mouseover", function() {
+    document.getElementById("myButton2").style.backgroundColor = "#8B7500";
+    document.getElementById("myText2").style.display = "block";
+});
+
+document.getElementById("myButton2").addEventListener("mouseout", function() {
+    document.getElementById("myButton2").style.backgroundColor = "#FFD700";
+    document.getElementById("myText2").style.display = "none";
+});
+
+document.getElementById("myButton2").addEventListener("click", function() {
+    document.getElementById("myText2").style.display = "block";
+});
+</script>
+
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton3" class="botao1">
+    Hepatite C
+    </button>
+</div>
+
+<p id="myText3" class="titulo2" style="display: none;">
+A hepatite C é causada pelo vírus HCV, que é transmitido pelo sangue, podendo acontecer por meio do compartilhamento de seringas e agulhas usadas para fazer tatuagens, ou administrar drogas injetáveis, partilha de itens de higiene pessoal, como lâmina de barbear ou escova de dente, ou contato sexual desprotegido.
+</p>
+
+<script>
+document.getElementById("myButton3").addEventListener("mouseover", function() {
+    document.getElementById("myButton3").style.backgroundColor = "#8B7500";
+    document.getElementById("myText3").style.display = "block";
+});
+
+document.getElementById("myButton3").addEventListener("mouseout", function() {
+    document.getElementById("myButton3").style.backgroundColor = "#FFD700";
+    document.getElementById("myText3").style.display = "none";
+});
+
+document.getElementById("myButton3").addEventListener("click", function() {
+    document.getElementById("myText3").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton4" class="botao1">
+    Hepatite D
+    </button>
+</div>
+
+<p id="myText4" class="titulo2" style="display: none;">
+A Hepatite D é causada pelo vírus HDV, causando sintomas como febre, sangramento fácil, confusão mental e pele e olhos amarelados.<br><br> 
+Esse tipo de hepatite geralmente surge em pessoas com hepatite B, pois o vírus HDV usa o antígeno de superfície das células do vírus da hepatite B para se multiplicar e infectar as células do fígado.
+
+</p>
+
+<script>
+document.getElementById("myButton4").addEventListener("mouseover", function() {
+    document.getElementById("myButton4").style.backgroundColor = "#8B7500";
+    document.getElementById("myText4").style.display = "block";
+});
+
+document.getElementById("myButton4").addEventListener("mouseout", function() {
+    document.getElementById("myButton4").style.backgroundColor = "#FFD700";
+    document.getElementById("myText4").style.display = "none";
+});
+
+document.getElementById("myButton4").addEventListener("click", function() {
+    document.getElementById("myText4").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton5" class="botao1">
+    Hepatite E
+    </button>
+</div>
+
+<p id="myText5" class="titulo2" style="display: none;">
+A hepatite E é uma inflamação causada pelo vírus HEV, provocando hepatite aguda ou crônica e que geralmente não causa sintomas. No entanto, pode causar sintomas como febre baixa, perda do apetite, náuseas ou dor abdominal.<br><br>
+O vírus HEV pode ser transmitido através do consumo de água contaminada, ingestão de carne mal cozida ou de uma mulher grávida para o bebê, por exemplo.
+
+</p>
+
+<script>
+document.getElementById("myButton5").addEventListener("mouseover", function() {
+    document.getElementById("myButton5").style.backgroundColor = "#8B7500";
+    document.getElementById("myText5").style.display = "block";
+});
+
+document.getElementById("myButton5").addEventListener("mouseout", function() {
+    document.getElementById("myButton5").style.backgroundColor = "#FFD700";
+    document.getElementById("myText5").style.display = "none";
+});
+
+document.getElementById("myButton5").addEventListener("click", function() {
+    document.getElementById("myText5").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton6" class="botao1">
+    Hepatite F
+    </button>
+</div>
+
+<p id="myText6" class="titulo2" style="display: none;">
+A hepatite F é um subgrupo da hepatite C. No entanto, o vírus dessa hepatite ainda não foi identificado em seres humanos e, por isso, este tipo de hepatite não é relevante.</p>
+
+<script>
+document.getElementById("myButton6").addEventListener("mouseover", function() {
+    document.getElementById("myButton6").style.backgroundColor = "#8B7500";
+    document.getElementById("myText6").style.display = "block";
+});
+
+document.getElementById("myButton6").addEventListener("mouseout", function() {
+    document.getElementById("myButton6").style.backgroundColor = "#FFD700";
+    document.getElementById("myText6").style.display = "none";
+});
+
+document.getElementById("myButton6").addEventListener("click", function() {
+    document.getElementById("myText6").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton7" class="botao1">
+    Hepatite G
+    </button>
+</div>
+
+<p id="myText7" class="titulo2" style="display: none;">
+A hepatite G é causada pelo vírus HGV, sendo geralmente encontrado em pessoas diagnosticadas com hepatite B, hepatite C ou HIV. A hepatite G pode ser transmitida através do contato com o sangue contaminado, em relações desprotegidas, compartilhamento de seringas ou transfusão sanguínea, por exemplo.</p>
+
+<script>
+document.getElementById("myButton7").addEventListener("mouseover", function() {
+    document.getElementById("myButton7").style.backgroundColor = "#8B7500";
+    document.getElementById("myText7").style.display = "block";
+});
+
+document.getElementById("myButton7").addEventListener("mouseout", function() {
+    document.getElementById("myButton7").style.backgroundColor = "#FFD700";
+    document.getElementById("myText7").style.display = "none";
+});
+
+document.getElementById("myButton7").addEventListener("click", function() {
+    document.getElementById("myText7").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton8" class="botao1">
+    Hepatite Autoimune
+    </button>
+</div>
+
+<p id="myText8" class="titulo2" style="display: none;">
+A hepatite autoimune é uma doença genética provocada por um erro do sistema imunológico onde os anticorpos atacam as células saudáveis do fígado causando inflamação e provocando sintomas como coceira na pele, dor na barriga, dor nas articulações e perda de apetite. </p>
+
+<script>
+document.getElementById("myButton8").addEventListener("mouseover", function() {
+    document.getElementById("myButton8").style.backgroundColor = "#8B7500";
+    document.getElementById("myText8").style.display = "block";
+});
+
+document.getElementById("myButton8").addEventListener("mouseout", function() {
+    document.getElementById("myButton8").style.backgroundColor = "#FFD700";
+    document.getElementById("myText8").style.display = "none";
+});
+
+document.getElementById("myButton8").addEventListener("click", function() {
+    document.getElementById("myText8").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton9" class="botao1">
+    Hepatite Medicamentosa
+    </button>
+</div>
+
+<p id="myText9" class="titulo2" style="display: none;">
+A hepatite medicamentosa é a inflamação do fígado causada por medicamentos, principalmente quando usados em excesso ou sem indicação médica. Os principais medicamentos que podem provocar esse tipo de hepatite são os que têm capacidade para causar irritação do fígado, como paracetamol ou nimesulida.
+</p>
+
+<script>
+document.getElementById("myButton9").addEventListener("mouseover", function() {
+    document.getElementById("myButton9").style.backgroundColor = "#8B7500";
+    document.getElementById("myText9").style.display = "block";
+});
+
+document.getElementById("myButton9").addEventListener("mouseout", function() {
+    document.getElementById("myButton9").style.backgroundColor = "#FFD700";
+    document.getElementById("myText9").style.display = "none";
+});
+
+document.getElementById("myButton9").addEventListener("click", function() {
+    document.getElementById("myText9").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton10" class="botao1">
+    Hepatite alcoólica
+    </button>
+</div>
+
+<p id="myText10" class="titulo2" style="display: none;">
+A hepatite alcoólica é causada pelo uso prolongado e excessivo de bebidas alcoólicas, causando o surgimento de sintomas como dores abdominais, náuseas, vômitos e perda de apetite, por exemplo.
+</p>
+
+<script>
+document.getElementById("myButton10").addEventListener("mouseover", function() {
+    document.getElementById("myButton10").style.backgroundColor = "#8B7500";
+    document.getElementById("myText10").style.display = "block";
+});
+
+document.getElementById("myButton10").addEventListener("mouseout", function() {
+    document.getElementById("myButton10").style.backgroundColor = "#FFD700";
+    document.getElementById("myText10").style.display = "none";
+});
+
+document.getElementById("myButton10").addEventListener("click", function() {
+    document.getElementById("myText10").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton11" class="botao1">
+    Hepatite Crônica
+    </button>
+</div>
+
+<p id="myText11" class="titulo2" style="display: none;">
+A hepatite crônica é a inflamação do fígado que dura mais de 6 meses e que pode provocar o desenvolvimento de cirrose ou insuficiência hepática e, conforme a gravidade das lesões, pode ser necessária a realização de um transplante de fígado
+</p>
+
+<script>
+document.getElementById("myButton11").addEventListener("mouseover", function() {
+    document.getElementById("myButton11").style.backgroundColor = "#8B7500";
+    document.getElementById("myText11").style.display = "block";
+});
+
+document.getElementById("myButton11").addEventListener("mouseout", function() {
+    document.getElementById("myButton11").style.backgroundColor = "#FFD700";
+    document.getElementById("myText11").style.display = "none";
+});
+
+document.getElementById("myButton11").addEventListener("click", function() {
+    document.getElementById("myText11").style.display = "block";
+});
+</script>
+
+
+<div style="display: flex; justify-content: center;">
+    <button id="myButton12" class="botao1">
+    Hepatite Fulminante
+    </button>
+</div>
+
+<p id="myText12" class="titulo2" style="display: none;">
+A hepatite fulminante é a inflamação grave do fígado em pessoas que possuem o fígado normal ou doença hepática controlada em que o fígado deixa de ser funcional, podendo levar ao óbito em poucos dias.
+</p>
+
+<script>
+document.getElementById("myButton12").addEventListener("mouseover", function() {
+    document.getElementById("myButton12").style.backgroundColor = "#8B7500";
+    document.getElementById("myText12").style.display = "block";
+});
+
+document.getElementById("myButton12").addEventListener("mouseout", function() {
+    document.getElementById("myButton12").style.backgroundColor = "#FFD700";
+    document.getElementById("myText12").style.display = "none";
+});
+
+document.getElementById("myButton12").addEventListener("click", function() {
+    document.getElementById("myText12").style.display = "block";
+});
+</script>
+
+<div class="titulo1"> <br>Principais Causas<P></P> </div>
+
+<div class="titulo2"> - Uso não controlado de medicamentos;<br> - Consumo excessivo de bebidas alcoólicas.<br> - Infecção por vírus, principalmente pelos vírus da hepatite A, B, C, D, E e G;<br><br> Além disso, a hepatite também pode acontecer como consequência de outras doenças, como lúpus, síndrome de Sjögren, fibrose cística, doença inflamatória intestinal, anemia hemolítica, artrite reumatoide, esclerodermia ou glomerulonefrite.
+<P></P> </div>
+
+
+
+
+</body>
+</html>
